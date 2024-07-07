@@ -7,8 +7,8 @@ import Footer from './Footer'
 const Home = () => {
   return (
     <div>
-      <Header />
-      {/* <Hero /> */}
+      {/* <Header /> */}
+      <Hero />
       {/* <Footer /> */}
     </div>
   )

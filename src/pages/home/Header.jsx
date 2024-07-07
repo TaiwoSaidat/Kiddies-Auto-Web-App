@@ -4,16 +4,18 @@ import arrowDown from '../../assets/arrowdownblack.png'
 import search from '../../assets/searchblack.png'
 import account from '../../assets/profileblack.png'
 import cart from '../../assets/cartblack.png'
+import menu from  '../../assets/menu.png'
 
 const Header = () => {
   return (
     <>
-    <nav className=' w-full h-28 flex items-center justify-between  py-8 bg-[#fcfcfc] ' >
-        <div className="w-[90%] h-12 flex justify-between items-center  mx-auto  flex-none order-none self-stretch grow-0 p-0;">
+    {/* bg-[#fcfcfc] */}
+    <nav className=' w-full h-28 flex items-center justify-between  py-8 bg-red-500 ' >
+        <div className="w-[90%] h-12 flex justify-between items-center mx-auto  flex-none order-none self-stretch grow-0 p-0;">
             
                 <img src={applogo} alt="" /> 
 
-                <div className="flex items-end gap-10 w-[414px] h-6 flex-none order-1 grow-0 mx-auto my-0 p-0">
+                <div className=" flex flex-col lg:flex-row items-end gap-10 w-[414px] h-6 flex-none order-1 grow-0 mx-auto my-0 p-0 ">
                     <div className="flex items-start gap-0.5 w-[103px] h-6 flex-none order-none grow-0 p-0">
                         <p>categories</p>
                         <img src={arrowDown} alt="" />
@@ -34,24 +36,17 @@ const Header = () => {
                         <img className="w-4 h-4 " src={search} alt="" />
                     </label>
                 </form>
-                <div className=' flex gap-1'>
+                <div className=' flex gap-1 w-[89px] h-6'>
                     <img src={account} alt="" />
                     <p>Account</p>
                 </div>
-                <div className=' flex gap-1'>
+                <div className=' flex gap-1 w-[89px] h-6'>
                     <img src={cart} alt="" />
                     <p>Cart</p>
                 </div>
-
-               </div> 
-            
-           
-           
-
-           
+               </div>          
         </div>
-        {/* this is a header\\A A\\A\   AA\
-        bg-orange-900 h-28 gap-2.5 py-8 px-20 */}
+        
     </nav>
     </>
   )
