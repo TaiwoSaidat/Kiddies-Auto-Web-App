@@ -1,12 +1,12 @@
 import React from 'react'
 import call from '../../assets/call.png'
-import arrowDown from '../../assets/arrowdown.png'
+import arrowDown from '../../assets/arrowdownwhite.png'
 
 const TopContactHeader = () => {
   return (
     <>
-        <div className='h-14 bg-[#1E2019] text-white flex items-center '>
-            <div className='w-[90%] mx-auto flex items-center justify-between md:gap-7 sm:gap-3'>
+        <div className='w-full h-14 bg-[#1E2019] text-white flex items-center '>
+            <div className='w-[90%] mx-auto flex items-center justify-between '>
                 {/* phone no */}
                 <div className=' flex'>
                     <img src={call} alt="" />
@@ -38,4 +38,6 @@ const TopContactHeader = () => {
   )
 }
 
-export default TopContactHeader
+export default TopContactHeader;
+
+
