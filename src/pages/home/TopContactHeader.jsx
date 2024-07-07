@@ -6,14 +6,14 @@ const TopContactHeader = () => {
   return (
     <>
         <div className='h-14 bg-[#1E2019] text-white flex items-center '>
-            <div className='w-[90%] mx-auto flex items-center justify-between'>
+            <div className='w-[90%] mx-auto flex items-center justify-between md:gap-7 sm:gap-3'>
                 {/* phone no */}
                 <div className=' flex'>
                     <img src={call} alt="" />
                     <p>+234903874698</p>
                 </div>
 
-                <div className='sm:hidden md:hidden'>
+                <div className=' hidden lg:block'>
                     <p>Get 10% off on selected items | Shop Now</p>
                 </div>
 
