@@ -48,32 +48,40 @@ const Cart = () => {
                 </div>
               </div>
           </div>
-          <div className='lg:w-[50%] m-4 bg-[#FAFAFA] border border-xl'>
-              <h3>Summary</h3>
+
+          <div className='lg:w-[50%] m-4 bg-[#FAFAFA] border rounded-xl '>
+              <h3 className='font-[600px] text-[32px]'>Summary</h3>
               <div>
-                <div className=' flex justify-between'>
-                  <div className='flex gap-2  '>
+                <div className=' flex justify-between '>
+                  <div className='flex gap-2 font-[500px] text-base'>
                     <p>Subtotal </p>
                     <img src={help} alt="" />
                   </div>
-                  <p>$270.00</p>
+                  <h3 className="font-[600px] text-2xl">$270.00</h3>
                 </div>
                 <div className=' flex justify-between'>
-                  <div className='flex gap-2  '>
-                    <p>Subtotal </p>
-                    <img src={help} alt="" />
+                  <div className='flex gap-2 font-[500px] text-base '>
+                    <p>Estimated delivery and handling </p>
+                    {/* <img src={help} alt="" /> */}
                   </div>
-                  <p>$270.00</p>
+                  <h3 className="font-[600px] text-2xl">$40.00</h3>
                 </div>
                 <div className=' flex justify-between'>
-                  <div className='flex gap-2  '>
-                    <p>Subtotal </p>
+                  <div className='flex gap-2 font-[500px] text-base w-[50%] '>
+                    <p>Estimated Taxes </p>
                     <img src={help} alt="" />
                   </div>
-                  <p>$270.00</p>
+                  <h3 className="font-[600px] text-2xl">$5.00</h3>
+                </div>
+                <div className=' flex justify-between'>
+                  <div className='flex gap-2 font-[500px] text-base '>
+                    <p>Promo code </p>
+                    <img src={help} alt="" />
+                  </div>
+                  {/* <p>$270.00</p> */}
                 </div>
               </div>
-              <div >
+              <div className='mt-2' >
                 <form action="#">
                     <label className=" flex h-8 input input-bordered rounded-3xl items-center gap-0  ">
                         <input
@@ -84,9 +92,29 @@ const Cart = () => {
                     </label>
                 </form>
               </div>
-              <div className='flex justify-between'>
-                <p>Total </p>
-                <p>$270.00</p>  
+
+              <div className='flex justify-between my-4'>
+                <div className='flex gap-2 font-[500px] text-base '>
+                  <p>Total </p>
+                  {/* <img src={help} alt="" /> */}
+                </div>
+                <h3 className="font-[600px] text-2xl">$315.00</h3>
+              </div>
+              <div className=' flex flex-col items-center justify-center'>
+                <button>
+                  <a href="/checkout"> 
+                    <div className="md:w-[250px] w-[143px] border border-[#840032] rounded-[100px] text-xs font-[400px] leading-[1.6] text-[#f8f8f8] bg-[#840032] text-center py-2">
+                      <p className=''>Check out your cart</p>		
+                    </div>
+                  </a>
+                </button>
+                <button>
+                  <a href=""> 
+                    <div className="md:w-[250px] w-[143px] border border-[#840032] rounded-[100px] text-xs font-[400px] leading-[1.6] text-[#840032] bg-[#f8f8f8] text-center py-2">
+                      <p className=''>Paypal</p>		
+                    </div>
+                  </a>
+                </button>
               </div>
           </div>
         </div>

@@ -20,21 +20,45 @@ const Checkout = () => {
     <>
       <div className='border border-green-800 bg-green-800 w-full flex flex-col items-center bg-[#ffffff]'>
         <div className='w-[90%] flex flex-row md:flex justify-between grid grid-cols-1 lg:gap-0 border border-red-600 bg-red-600'>
-          <div className=' flex flex-row md:flex justify-between grid grid-cols-1 lg:gap-0 lg:w-[50%] bg-yellow-300'>
+          <div className=' flex flex-col md:flex grid grid-cols-1 lg:gap-0 lg:w-[50%] bg-yellow-300 m-4 border rounded-xl'>
                 {/* flex justify-between bg-yellow-600 grid grid-col-1  */}
-                <p>Checkout</p>
-                <p>How would your like your order</p>
-                {/* <img src={fav} alt="" className=''/> */}
-                {/* <img src={topImage} alt="" /> */}
-              <div className='flex'>
-                <a href=""> <ButtonFilter /></a>
-                <a href=""> <ButtonFilter /></a>
+                <h3 className='font-[600px] text-[32px]'>Checkout</h3>
+                <h5 className='font-[600px] text-[24px]'>How would your like your order</h5>
+                <div className='flex flex-row justify-between '>
+                  {/* later up flex-col items-center flex md:flex-row justify-between */}
+                  <button>
+                    <a href=""> 
+                    <div className="md:w-[250px] w-[143px] border border-[#840032] rounded-[100px] text-xs font-[400px] leading-[1.6] text-[#f8f8f8] bg-[#840032] text-center py-2">
+                      <p className=''>Delivery</p>		
+                    </div>
+                    </a>
+                </button>
+                <button>
+                  <a href=""> 
+                    <div className="md:w-[250px] w-[143px] border border-[#840032] rounded-[100px] text-xs font-[400px] leading-[1.6] text-[#840032] bg-[#f8f8f8] text-center py-2">
+                      <p className=''>Payment on Delivery</p>		
+                    </div>
+                  </a>
+                </button>
               </div>
-              <div className='flex justify-between '>
-                <p>Enter your details</p> 
-                <form action="">
-
+              <div className='flex flex-col  '>
+                <h5 className=" className='font-[600px] text-[24px]">Enter your details</h5>
+                <div>
+                <form action="#">
+                  <div className=''>
+                    <label className="  input input-bordered rounded-3xl items-center  ">
+                        <input type="text"
+                            className=" "
+                            placeholder="First Name"/> 
+                    </label>
+                    <label className=" input input-bordered rounded-3xl items-center ">
+                        <input type="text"
+                            className=" "
+                            placeholder="Last Name"/> 
+                    </label>
+                  </div>
                 </form>
+                </div>
               </div>
 
           </div>
@@ -55,14 +79,14 @@ const Checkout = () => {
                     <p>Estimated delivery and handling </p>
                     {/* <img src={help} alt="" /> */}
                   </div>
-                  <h3 className="font-[600px] text-2xl">$270.00</h3>
+                  <h3 className="font-[600px] text-2xl">$0.00</h3>
                 </div>
                 <div className=' flex justify-between'>
                   <div className='flex gap-2 font-[500px] text-base w-[50%] '>
                     <p>Estimated Taxes </p>
                     <img src={help} alt="" />
                   </div>
-                  <h3 className="font-[600px] text-2xl">$270.00</h3>
+                  <h3 className="font-[600px] text-2xl">$5.00</h3>
                 </div>
                 <div className=' flex justify-between'>
                   <div className='flex gap-2 font-[500px] text-base '>
@@ -72,7 +96,7 @@ const Checkout = () => {
                   {/* <p>$270.00</p> */}
                 </div>
               </div>
-              <div >
+              <div className='mt-2' >
                 <form action="#">
                     <label className=" flex h-8 input input-bordered rounded-3xl items-center gap-0  ">
                         <input
@@ -89,7 +113,7 @@ const Checkout = () => {
                   <p>Total </p>
                   {/* <img src={help} alt="" /> */}
                 </div>
-                <h3 className="font-[600px] text-2xl">$270.00</h3>
+                <h3 className="font-[600px] text-2xl">$315.00</h3>
               </div>
           </div>
         </div>
