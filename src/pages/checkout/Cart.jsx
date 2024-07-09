@@ -19,7 +19,6 @@ import search from '../../assets/searchblack.png'
 const Cart = () => {
   return (
     <>
-    {/* grid-col-2 lg:grid grid-col-1 mx-auto flex-none order-none  grow-0 p-0 gap-6 */}
       <div className='border w-full flex flex-col items-center bg-[#ffffff]'>
         <div className='w-[90%] flex flex-row md:flex justify-between grid grid-cols-1 lg:gap-0 border  '>
           <div className=' flex flex-row md:flex justify-between grid grid-cols-1 lg:gap-0 lg:w-[50%] bg-[#FAFAFA] border border-xl'>
@@ -49,6 +48,7 @@ const Cart = () => {
                 </div>
               </div>
           </div>
+          
           
 
           <div className='lg:w-[50%] m-4 bg-[#FAFAFA] border rounded-xl '>
