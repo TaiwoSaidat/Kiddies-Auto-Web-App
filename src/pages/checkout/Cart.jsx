@@ -20,8 +20,8 @@ const Cart = () => {
   return (
     <>
     {/* grid-col-2 lg:grid grid-col-1 mx-auto flex-none order-none  grow-0 p-0 gap-6 */}
-      <div className='border border-green-800 w-full flex flex-col items-center bg-[#ffffff]'>
-        <div className='w-[90%] flex flex-row md:flex justify-between grid grid-cols-1 lg:gap-0 border border-red-600 '>
+      <div className='border w-full flex flex-col items-center bg-[#ffffff]'>
+        <div className='w-[90%] flex flex-row md:flex justify-between grid grid-cols-1 lg:gap-0 border  '>
           <div className=' flex flex-row md:flex justify-between grid grid-cols-1 lg:gap-0 lg:w-[50%] bg-[#FAFAFA] border border-xl'>
               <div>
                 {/* flex justify-between bg-yellow-600 grid grid-col-1  */}
@@ -49,6 +49,7 @@ const Cart = () => {
                 </div>
               </div>
           </div>
+          
 
           <div className='lg:w-[50%] m-4 bg-[#FAFAFA] border rounded-xl '>
               <h3 className='font-[600px] text-[32px]'>Summary</h3>
@@ -56,30 +57,28 @@ const Cart = () => {
                 <div className=' flex justify-between '>
                   <div className='flex gap-2 font-[500px] text-base'>
                     <p>Subtotal </p>
-                    <img src={help} alt="" />
+                    <img src={help} alt=""  className='w-5 h-5' />
                   </div>
                   <h3 className="font-[600px] text-2xl">$270.00</h3>
                 </div>
                 <div className=' flex justify-between'>
                   <div className='flex gap-2 font-[500px] text-base '>
                     <p>Estimated delivery and handling </p>
-                    {/* <img src={help} alt="" /> */}
                   </div>
                   <h3 className="font-[600px] text-2xl">$40.00</h3>
                 </div>
                 <div className=' flex justify-between'>
                   <div className='flex gap-2 font-[500px] text-base w-[50%] '>
                     <p>Estimated Taxes </p>
-                    <img src={help} alt="" />
+                    <img src={help} alt=""   className='w-5 h-5'/>
                   </div>
                   <h3 className="font-[600px] text-2xl">$5.00</h3>
                 </div>
                 <div className=' flex justify-between'>
                   <div className='flex gap-2 font-[500px] text-base '>
                     <p>Promo code </p>
-                    <img src={help} alt="" />
+                    <img src={help} alt=""  className='w-5 h-5'/>
                   </div>
-                  {/* <p>$270.00</p> */}
                 </div>
               </div>
               <div className='mt-2' >

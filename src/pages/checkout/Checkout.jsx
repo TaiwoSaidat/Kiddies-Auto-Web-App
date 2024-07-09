@@ -139,7 +139,7 @@ const Checkout = () => {
                 <div className=' flex justify-between '>
                   <div className='flex gap-2 font-[500px] text-base'>
                     <p>Subtotal </p>
-                    <img src={help} alt="" />
+                    <img src={help} alt="" className='w-5 h-5'/>
                   </div>
                   <h3 className="font-[600px] text-2xl">$270.00</h3>
                 </div>
@@ -152,14 +152,14 @@ const Checkout = () => {
                 <div className=' flex justify-between'>
                   <div className='flex gap-2 font-[500px] text-base w-[50%] '>
                     <p>Estimated Taxes </p>
-                    <img src={help} alt="" />
+                    <img src={help} alt=""  className='w-5 h-5'/>
                   </div>
                   <h3 className="font-[600px] text-2xl">$5.00</h3>
                 </div>
                 <div className=' flex justify-between'>
                   <div className='flex gap-2 font-[500px] text-base '>
                     <p>Promo code </p>
-                    <img src={help} alt="" />
+                    <img src={help} alt=""  className='w-5 h-5'/>
                   </div>
                 </div>
               </div>
@@ -186,8 +186,7 @@ const Checkout = () => {
                 <div className=' w-[100%] lg:flex flex-col items-center gap-1 '>
                   {/* heading */}
                     <p>Arrives mon, sept 10 - fri, sept 15</p>                  
-                  {/* <div className=""> */}
-                  <div className='  w-[90%] flex flex-row md:flex justify-center gap-20 '>
+                    <div className='  w-[90%] flex flex-row md:flex justify-center gap-20 '>
                     <img src={topImage} alt="" className='w-auto h-30'/> 
                     <div>
                       <p className='font-[500px] text-[24px]'>Mercedes Benz Cls</p>
@@ -202,8 +201,6 @@ const Checkout = () => {
               </div>
             </div>        
         </div>
-
-        {/* Recommendations  w-full */}
 
       </div>
       <div className='lg:px-12'>
