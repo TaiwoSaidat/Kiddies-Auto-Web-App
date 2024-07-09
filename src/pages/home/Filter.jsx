@@ -29,16 +29,16 @@ const arr = [
 		text: "compatible",
 	},
 	{
-		text: "compatible",
+		text: "jeep",
 	},
 	{
-		text: "compatible",
+		text: "motorbike",
 	},
 	{
-		text: "compatible",
+		text: "Bicycle",
 	},
 	{
-		text: "compatible",
+		text: "Brand",
     }
 ]; 
 

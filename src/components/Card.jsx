@@ -1,5 +1,4 @@
 import React from 'react'
-import jeep from '../assets/jeep2.png'
 import rCart from '../assets/bytesize_cart.png'
 import heart from '../assets/favorite.png'
 import rating from '../assets/rating.png'
@@ -7,7 +6,7 @@ import rating from '../assets/rating.png'
 const Card = ({image, text, priceblack, pricered, rate, price}) => {
   return (
     <>
-        <div className=" rounded-xl border border-1 bg-[#DAE0EF33] p-3  ">
+        <div className=" rounded-xl border border-1 bg-[#DAE0EF33]   ">
 			<img src={image} alt="" className=" w-full" />
             <div className='flex'>
                 <p className=" w-[70%] font-semibold text-lg lg:text-2xl my-2 flex">{text}</p>
