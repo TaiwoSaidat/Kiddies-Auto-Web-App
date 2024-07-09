@@ -43,9 +43,9 @@ const Header = () => {
                     <p className=' hidden lg:flex '>Account</p>
                 </div>
                 <div className=' flex gap-1 w-[89px] h-6'>
-                    <a href="./">
+                    <a href="./cart">
                         <img src={cart} alt="" />
-                        <p className=' hidden lg:flex '></p>
+                        <p className=' hidden lg:flex '>Cart</p>
                     </a>
                     
                 </div>

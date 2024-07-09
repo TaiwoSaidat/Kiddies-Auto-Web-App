@@ -57,6 +57,15 @@ const Checkout = () => {
                             placeholder="Last Name"/> 
                     </label>
                   </div>
+                  <div>
+                    <label className=" flex h-8 input input-bordered rounded-3xl items-center gap-0  ">
+                        <input
+                            type="text"
+                            className=" "
+                            placeholder="Email address"
+                        /> 
+                    </label>
+                  </div>
                 </form>
                 </div>
               </div>
