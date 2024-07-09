@@ -22,29 +22,31 @@ const Cart = () => {
       <div className='border w-full flex flex-col items-center bg-[#ffffff]'>
         <div className='w-[90%] flex flex-row md:flex justify-between grid grid-cols-1 lg:gap-0 border  '>
           <div className=' flex flex-row md:flex justify-between grid grid-cols-1 lg:gap-0 lg:w-[50%] bg-[#FAFAFA] border border-xl'>
-              <div>
+              <div className=''>
                 {/* flex justify-between bg-yellow-600 grid grid-col-1  */}
-                <img src={fav} alt="" className=''/>
-                <img src={topImage} alt="" /> 
-              </div>
-              <div className='flex justify-between bg-gray-400'>
-                <p>Mercedes Benz Cls</p> 
-                <p>$270.00</p> 
+                <img src={fav} alt="" />
+                <img src={topImage} alt="" className='w-[320px] h-[230px]' /> 
               </div>
               <div>
-                <p>battery operated ride</p>
-                <p>Age 1-3 years</p>
-                <p>Colour black</p>
-              </div>
-              <div className='flex gap-20 px-6 pr-4'>
-                <div className='flex w-[50%] justify-between '>
-                  <a href=""><img src={fav} alt="" /></a>
-                  <a href=""><img src={basket} alt="" /></a>
+                <div className='flex justify-between '>
+                  <p className='font-[500px] text-[24px]'>Mercedes Benz Cls</p> 
+                  <h3 className='font-[600px] text-[32px]' >$270.00</h3> 
                 </div>
-                <div className='flex w-[50%] justify-between '>
-                <a href=""><img src={dash} alt="" /></a>
-                  <p>1</p>
-                  <a href=""><img src={plus} alt="" /></a>
+                <div className=''>
+                  <p>battery operated ride</p>
+                  <p>Age 1-3 years</p>
+                  <p>Colour black</p>
+                </div>
+                <div className='flex gap-20 px-6 pr-4'>
+                  <div className='flex w-[50%] justify-between '>
+                    <a href=""><img src={fav} alt="" /></a>
+                    <a href=""><img src={basket} alt="" /></a>
+                  </div>
+                  <div className='flex w-[50%] justify-between '>
+                  <a href=""><img src={dash} alt="" /></a>
+                    <p>1</p>
+                    <a href=""><img src={plus} alt="" /></a>
+                  </div>
                 </div>
               </div>
           </div>

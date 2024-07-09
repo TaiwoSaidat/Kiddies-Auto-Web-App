@@ -184,19 +184,19 @@ const Checkout = () => {
                 {/* mercedes */}
               <div className=' hidden lg:flex justify-between  '>
                 <div className=' w-[100%] lg:flex flex-col items-center gap-1 '>
-                  {/* heading */}
+                    {/* heading */}
                     <p>Arrives mon, sept 10 - fri, sept 15</p>                  
                     <div className='  w-[90%] flex flex-row md:flex justify-center gap-20 '>
-                    <img src={topImage} alt="" className='w-auto h-30'/> 
-                    <div>
-                      <p className='font-[500px] text-[24px]'>Mercedes Benz Cls</p>
-                      <div className='font-[400px] text-[16px] py-3'>
-                        <p>battery operated ride</p>
-                        <p>Colour: black</p>
-                        <p>Quantity: 1</p>
-                      </div>
+                      <img src={topImage} alt="" className='w-auto h-30'/> 
+                      <div>
+                        <p className='font-[500px] text-[24px]'>Mercedes Benz Cls</p>
+                        <div className='font-[400px] text-[16px] py-3'>
+                          <p>battery operated ride</p>
+                          <p>Colour: black</p>
+                          <p>Quantity: 1</p>
+                        </div>
                     </div>
-                    </div>                  
+                  </div>                  
                 </div>              
               </div>
             </div>        
