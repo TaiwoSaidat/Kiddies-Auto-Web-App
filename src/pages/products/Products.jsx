@@ -73,19 +73,19 @@ const Products = () => {
                 </div>
                 <div className=' w-full flex items-center justify-between py-8 bg-[#fcfcfc] mx-auto ' >
                   <div className="w-[90%] flex flex-col lg:flex-row justify-between items-center mx-auto flex-none order-none self-stretch grow-0 p-0 gap-6">
-                    {/* <div className=' lg:flex justify-between w-full sm:grid grid-cols-2'> */}
+                    <div className=' lg:flex justify-between w-full sm:grid grid-cols-2'>
                       <div className="flex flex-wrap justify-between ">
                               {array.map((button, i) => {
                                   return <ButtonFilter key={i} {...button} />;
                               })}
                       </div>
-                    {/* </div> */}
+                    </div>
                   </div>
                 </div>
             </div>
           </div>
 
-          {/* cards */}
+          {/* Top Deals cards */}
           <div className="md:flex justify-between gap-3 grid grid-cols-1 lg:gap-3 w-full items-center ">
             {arrays.map((card, i) => {
               return <Card key={i} {...card} />;
@@ -98,7 +98,7 @@ const Products = () => {
           </div>
         </div>
       </div>
-      <div className='flex justify-center items-center'>
+      <div className='flex justify-center items-center my-10'>
         <div className="w-[143px] border rounded-[100px] text-base font-[400px]  text-[#696969] bg-[#F6F6F6] text-center py-2.5">
             <p className=''>Load More</p>		
         </div>

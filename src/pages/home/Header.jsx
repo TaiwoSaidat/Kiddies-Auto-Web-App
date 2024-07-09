@@ -6,6 +6,8 @@ import account from '../../assets/profileblack.png'
 import cart from '../../assets/cartblack.png'
 import menu from  '../../assets/menu.png'
 
+
+
 const Header = () => {
   return (
     <>
@@ -41,10 +43,13 @@ const Header = () => {
                     <p className=' hidden lg:flex '>Account</p>
                 </div>
                 <div className=' flex gap-1 w-[89px] h-6'>
-                    <img src={cart} alt="" />
-                    <p className=' hidden lg:flex '>Cart</p>
+                    <a href="./">
+                        <img src={cart} alt="" />
+                        <p className=' hidden lg:flex '></p>
+                    </a>
+                    
                 </div>
-               </div>          
+               </div> 
         </div>
         
     </nav>
