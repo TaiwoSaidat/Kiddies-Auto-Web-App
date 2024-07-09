@@ -27,6 +27,8 @@ const Products = () => {
           <div className=' flex justify-between  '>
             <div className=' lg:flex flex-row items-center '>
               {/* flash sales */}
+              {/* add carousel here later */}
+
               <div className='  flex gap-10'>
                 <img src={bolt} alt="" className='w-20 h-20' />
                 <h3 className=" font-semibold text-2xl my-6 ">Flash Sales</h3>
