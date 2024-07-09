@@ -96,7 +96,6 @@ const Cart = () => {
               <div className='flex justify-between my-4'>
                 <div className='flex gap-2 font-[500px] text-base '>
                   <p>Total </p>
-                  {/* <img src={help} alt="" /> */}
                 </div>
                 <h3 className="font-[600px] text-2xl">$315.00</h3>
               </div>
