@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import applogo from '../../assets/applogo.png'
 import fb from '../../assets/fb.png'
 import ig from '../../assets/ig.png'
@@ -25,17 +26,34 @@ const Footer = () => {
       </div>
       <nav>
         <h6 className="footer-title font-[800] text-[#131313] ">Useful Links</h6>
-        <a className="link link-hover">Delivery</a>
-        <a className="link link-hover">Account</a>
-        <a className="link link-hover">Cart</a>
-        <a className="link link-hover">Products</a>
+        <Link>
+          <p className="link link-hover" to='/cart'>Delivery</p>
+        </Link>
+        <Link>
+          <p className="link link-hover" to='/cart'>Account</p>
+        </Link>
+        <Link>
+          <p className="link link-hover" to='/cart'>Cart</p>
+        </Link>
+        <Link>
+          <p className="link link-hover" to='/cart'>Products</p>
+        </Link>
       </nav>
+
       <nav>
         <h6 className="footer-title font-[800] text-[#131313] ">Category</h6>
-        <a className="link link-hover">Compatible</a>
-        <a className="link link-hover">Jeep</a>
-        <a className="link link-hover">Motorbike</a>
-        <a className="link link-hover">Bicycle</a>
+        <Link>
+          <p className="link link-hover" to='/cart'>Compatible</p>
+        </Link>
+        <Link>
+          <p className="link link-hover" to='/cart'>Jeep</p>
+        </Link>
+        <Link>
+          <p className="link link-hover" to='/cart'>\motorbike</p>
+        </Link>
+        <Link>
+          <p className="link link-hover" to='/cart'>Bicycle</p>
+        </Link>
       </nav>
       <nav>
         <h6 className="footer-title font-[800] text-[#131313] ">Contact Us</h6>
