@@ -203,13 +203,12 @@ const Checkout = () => {
             </div>        
         </div>
 
-        {/* Recommendations  w-full flex items-center justify-between py-8 bg-[#fcfcfc] mx-auto */}
+        {/* Recommendations  w-full */}
 
       </div>
       <div className='lg:px-12'>
-        <div className='flex flex-col items-start gap-8   h-[786.2px] p-6 rounded-3xl left-20 top-[1047px] bg-yellow-800' >
-          <div className="w-[90%] lg:w-[45%] flex flex-col p-2 bg-red-500 ">
-            {/* flex flex-col mx-auto flex-none order-none  grow-0 p-0 gap-6 */}
+        <div className='flex flex-col items-start gap-8   h-[786.2px] p-6 rounded-3xl left-20 top-[1047px] bg-[#fcfcfc]' >
+          <div className="w-[90%] lg:w-[45%] flex flex-col p-2  ">
             <h3 className='font-[600px] text-[32px]'>Payment</h3>
             <div>
               <p>Billing country/Region</p>
@@ -245,11 +244,9 @@ const Checkout = () => {
             {/* order review */}
             <div className=' '>
               <h3 className='font-[600px] text-[32px]'>Order Review</h3>
-              {/* <div className=''> */}
                 <p className=''>
                   By clicking The “place order” button, you confirm that you 
                   have read, understand, and accept our  
-                  {/* <div> */}
                     <Link to='/checkout' className='link link-hover font-medium'> Terms of Use</Link>
                     <span> , </span>
                     <Link to='/checkout' className='link link-hover font-medium'>Terms of Sale</Link>
@@ -258,34 +255,15 @@ const Checkout = () => {
                     <span> and </span>
                     <Link to='/checkout' className='link link-hover font-medium'>Return Policy</Link>
                     <span>.</span>
-                  {/* </div> */}
                 
                 </p>
-              {/* </div> */}
                   <Link to='/checkout'>
-                            <div className="flex mt-12 justify-end">                            
-                            <p className="   md:w-[250px] w-[143px] border border-[#840032] rounded-[100px] text-xs font-[400px] leading-[1.6] text-[#f8f8f8] bg-[#840032] text-center py-2">
-                            Place Order</p>
-                            </div>
-                        </Link>
+                    <div className="flex mt-12 justify-end">                            
+                    <p className="   md:w-[250px] w-[143px] border border-[#840032] rounded-[100px] text-xs font-[400px] leading-[1.6] text-[#f8f8f8] bg-[#840032] text-center py-2">
+                      Place Order</p>
+                    </div>
+                  </Link>
             </div>
-
-            {/* flex justify-between */}
-            {/* <div className=' w-[100%] flex  bg-yellow-400 '> */}
-              {/* hello */}
-              {/* <div className=' lg:flex flex-row items-center bg-green-500 '>
-                <div className='  flex flex-col gap-5'>
-                  <p>Arrives mon, sept 10 - fri, sept 15</p>
-                  <h3 className=" font-semibold text-2xl my-6 ">Recommendations for you</h3>
-                </div>   
-              </div>              
-              <div className=' lg:flex flex-row items-center bg-green-500 '>
-                <div className='  flex flex-col gap-5'>
-                  <p>Arrives mon, sept 10 - fri, sept 15</p>
-                  <h3 className=" font-semibold text-2xl my-6 ">Recommendations for you</h3>
-                </div>   
-              </div>               */}
-            {/* </div>        */}
           </div> 
         </div>
       </div>
