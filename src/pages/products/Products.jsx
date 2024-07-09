@@ -2,18 +2,18 @@ import React from 'react'
 import Card from '../../components/Card'
 import jeep from '../../assets/jeep2.png'
 import bolt from '../../assets/bolt.png'
-import east from '../../assets/east.png'
+import east from '../../assets/easts.png'
 import west from '../../assets/west.png'
 
 const Products = () => {
   return (
     <>
-      <div className=' w-full flex items-center justify-between py-8 bg-[#fcfcfc] mx-auto ' >
-        <div className="w-[90%] flex flex-col mx-auto flex-none order-none self-stretch grow-0 p-0 gap-6">
-          <div className=' flex  '>
-            <div className=' lg:flex flex-row items-center gap-6 w-[459px] flex-none order-none grow-0 p-0'>
+      <div className=' flex items-center  text-xl font-semibold bg-white ' >
+        <div className="w-[90%] mx-auto flex items-center justify-between">
+          <div className=' flex justify-between  '>
+            <div className=' lg:flex flex-row items-center  gap-6 w-[459px] '>
               <div className=' w-full flex gap-10'>
-                <img src={bolt} alt="" />
+                <img src={bolt} alt="" className='' />
                 <h3 className=" font-semibold text-2xl my-6 ">Flash Sales</h3>
               </div>
               <div className='flex gap-4'>
@@ -24,7 +24,7 @@ const Products = () => {
               </div>
             </div>
             <div className="">
-              <ul className=''>
+              <ul className='flex gap-2 items-center h-full  '>
                 <li><a href="">
                   <img src={east} alt="" />
                 </a></li>
@@ -36,7 +36,7 @@ const Products = () => {
           </div>
 
           {/* cards */}
-          <div className="md:flex justify-between grid grid-cols-2 lg:gap-0 w-full items-center ">
+          <div className="md:flex justify-between gap-3 grid grid-cols-2 lg:gap-3 w-full items-center ">
             {arr.map((card, i) => {
               return <Card key={i} {...card} />;
             })}
