@@ -5,6 +5,7 @@ import search from '../../assets/searchblack.png'
 import account from '../../assets/profileblack.png'
 import cart from '../../assets/cartblack.png'
 import menu from  '../../assets/menu.png'
+import { Link } from 'react-router-dom'
 
 
 
@@ -42,12 +43,19 @@ const Header = () => {
                     <img src={account} alt="" />
                     <p className=' hidden lg:flex '>Account</p>
                 </div>
-                <div className=' flex gap-1 w-[89px] h-6'>
-                    <a href="./Cart">
-                        <img src={cart} alt="" /> 
-                    </a>
-                    <p className=' hidden lg:flex '>Cart</p>
-                </div>
+
+
+                    
+
+                  
+                <Link to='/Cart'>
+
+                        <div className=' flex gap-1 w-[89px] h-6'>
+                            <img src={cart} alt="" /> 
+                            <p className=' hidden lg:flex '>Cart</p>
+                        </div>  
+ 
+                </Link>
                </div> 
         </div>
         

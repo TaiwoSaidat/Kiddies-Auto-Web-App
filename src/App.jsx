@@ -16,21 +16,24 @@ function App() {
 
   return (
     <>
-     <TopContactHeader />
-     <Header />
-
-
-     <Router>
+     
+     
+     
+      <Router>
+        <TopContactHeader />
+        <Header />
         <Routes>
+          
           <Route path='/' element={<Home />} />
           <Route path='/Products' element={<Products/>} />
           <Route path='/Cart' element={<Cart/>} />
           <Route path='/ProductsDescription' element={<ProductsDescription/>} />
           <Route path='/Checkout' element={<Checkout/>} />
         </Routes>
+        <Footer/>
       </Router>
-   
-     <Footer/>
+
+
     
      
     </>

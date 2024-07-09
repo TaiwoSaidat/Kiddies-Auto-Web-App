@@ -58,13 +58,32 @@ const Checkout = () => {
                     </label>
                   </div>
                   <div>
-                    <label className=" flex h-8 input input-bordered rounded-3xl items-center gap-0  ">
+                    <label className=" flex h-6 input input-bordered rounded-3xl items-center gap-0  ">
                         <input
                             type="text"
                             className=" "
                             placeholder="Email address"
                         /> 
                     </label>
+                    <label className=" flex h-6 input input-bordered rounded-3xl items-center gap-0  ">
+                        <input
+                            type="text"
+                            className=" "
+                            placeholder="Address"
+                        /> 
+                    </label>
+                    <div className=''>
+                    <label className="  input input-bordered rounded-3xl items-center  ">
+                        <input type="text"
+                            className=" "
+                            placeholder="First Name"/> 
+                    </label>
+                    <label className=" input input-bordered rounded-3xl items-center ">
+                        <input type="text"
+                            className=" "
+                            placeholder="Last Name"/> 
+                    </label>
+                  </div>
                   </div>
                 </form>
                 </div>
