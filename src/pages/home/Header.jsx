@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <>
     {/* bg-[#fcfcfc] */}
-    <nav className=' w-full h-28 flex items-center justify-between  py-8 bg-[#fcfcfc] ' >
+    <nav className=' header w-full h-28 flex items-center justify-between  py-8 bg-[#fcfcfc] ' >
         <div className="w-[90%] h-12 flex justify-between items-center mx-auto  flex-none order-none self-stretch grow-0 p-0;">
             
                 <img src={applogo} alt="" /> 
