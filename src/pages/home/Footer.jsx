@@ -8,7 +8,7 @@ import twitter from '../../assets/twitter.png'
 const Footer = () => {
   return (
     <>
-    <footer className="footer bg-[ffffff] text-[#797979] font-semibold p-10">
+    <footer className="footer bg-[#ffffff] text-[#797979] font-semibold p-10">
       <div className="lg:col-span-1">
               <img src={applogo} alt="" />
               <p className=" my-4 text-base text-[#797979] ">
