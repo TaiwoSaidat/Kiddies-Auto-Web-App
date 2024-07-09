@@ -10,6 +10,7 @@ import Filter from './Filter'
 const Home = () => {
   return (
     <div>
+      {/* <BrowserRouter><Header /><Pages /><Footer /></BrowserRouter> */}
       {/* <Header /> */}
       {/* <Card /> */}
       <Hero />
