@@ -48,7 +48,7 @@ const Header = () => {
                     
 
                   
-                <Link to='/Cart'>
+                <Link to='/cart'>
 
                         <div className=' flex gap-1 w-[89px] h-6'>
                             <img src={cart} alt="" /> 
