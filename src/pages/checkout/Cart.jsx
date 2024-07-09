@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import ButtonFilter from '../../components/ButtonFilter'
 import Card from '../../components/Card'
 import east from '../../assets/easts.png'
@@ -102,11 +103,13 @@ const Cart = () => {
               </div>
               <div className=' flex flex-col items-center justify-center'>
                 <button>
-                  <a href="/checkout"> 
-                    <div className="md:w-[250px] w-[143px] border border-[#840032] rounded-[100px] text-xs font-[400px] leading-[1.6] text-[#f8f8f8] bg-[#840032] text-center py-2">
-                      <p className=''>Check out your cart</p>		
-                    </div>
-                  </a>
+                  <Link>
+                    <a href="/Checkout"> 
+                      <div className="md:w-[250px] w-[143px] border border-[#840032] rounded-[100px] text-xs font-[400px] leading-[1.6] text-[#f8f8f8] bg-[#840032] text-center py-2">
+                        <p className=''>Check out your cart</p>		
+                      </div>
+                    </a> 
+                  </Link>
                 </button>
                 <button>
                   <a href=""> 
