@@ -6,7 +6,7 @@ import heart from '../assets/favorite.png'
 const Card = ({image, text, priceblack, pricered, rate, price}) => {
   return (
     <>
-        <div className=" w-[300px] shadow-special rounded-xl border border-[#3992ED] p-2 flex flex-col justify-between gap-2 ">
+        <div className=" shadow-special rounded-xl border border-[#3992ED] p-2 flex flex-col justify-between gap-2 ">
 			<img src={image} alt="" className=" w-" />
             <div className='flex'>
                 <p className=" w-[70%] font-semibold text-lg lg:text-2xl my-2 flex">{text}</p>

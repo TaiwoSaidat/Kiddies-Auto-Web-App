@@ -8,8 +8,8 @@ import west from '../../assets/west.png'
 const Products = () => {
   return (
     <>
-      <div className=' flex items-center  text-xl font-semibold bg-white ' >
-        <div className="w-[90%] mx-auto flex items-center justify-between">
+      <div className=' w-full flex items-center justify-between py-8 bg-[#fcfcfc] mx-auto ' >
+        <div className="w-[90%] flex flex-col mx-auto flex-none order-none  grow-0 p-0 gap-6">
           <div className=' flex justify-between  '>
             <div className=' lg:flex flex-row items-center  gap-6 w-[459px] '>
               <div className=' w-full flex gap-10'>
