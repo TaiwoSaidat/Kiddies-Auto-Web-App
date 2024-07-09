@@ -99,7 +99,7 @@ const Products = () => {
         </div>
       </div>
       <div className='flex justify-center items-center mb-10'>
-        <div className="w-[143px] border rounded-[100px] text-base font-[400px]  text-[#696969] bg-[#F6F6F6] text-center py-2.5">
+        <div className="w-[143px] border rounded-[100px] text-base font-[400px]  text-[#696969] bg-[#ffffff] text-center py-2.5">
             <p className=''>Load More</p>		
         </div>
       </div>
