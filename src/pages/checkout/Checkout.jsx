@@ -1,20 +1,25 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ButtonFilter from '../../components/ButtonFilter'
-import Button from '../../components/button/Button'
-import Card from '../../components/Card'
-import east from '../../assets/easts.png'
-import west from '../../assets/west.png'
+// import ButtonFilter from '../../components/ButtonFilter'
+// import Button from '../../components/button/Button'
+// import Card from '../../components/Card'
+// import east from '../../assets/easts.png'
+// import west from '../../assets/west.png'
 import topImage from '../../assets/topImage.png'
-import fav from '../../assets/favorite.png'
 import help from '../../assets/help.png'
-import plus from '../../assets/plus.png'
-import dash from '../../assets/dash.png'
-import basket from '../../assets/basket.png'
-import image1 from '../../assets/image1.png'
-import image2 from '../../assets/image2.png'
-import image3 from '../../assets/image3.png'
-import image4 from '../../assets/image4.png'
+import creditCard from '../../assets/credit_card.png'
+import gpay from '../../assets/gpay.png'
+import pp from '../../assets/pp.png'
+import box from '../../assets/box.png'
+// import paypal from '../../assets/paypal.svg'
+// import fav from '../../assets/favorite.png'
+// import plus from '../../assets/plus.png'
+// import dash from '../../assets/dash.png'
+// import basket from '../../assets/basket.png'
+// import image1 from '../../assets/image1.png'
+// import image2 from '../../assets/image2.png'
+// import image3 from '../../assets/image3.png'
+// import image4 from '../../assets/image4.png'
 
 const Checkout = () => {
   return (
@@ -203,45 +208,100 @@ const Checkout = () => {
         </div>
 
       </div>
-      <div className='lg:px-12'>
+      <div className='lg:px-12 text-base'>
         <div className='flex flex-col items-start gap-8   h-[786.2px] p-6 rounded-3xl left-20 top-[1047px] bg-[#fcfcfc]' >
           <div className="w-[90%] lg:w-[45%] flex flex-col p-2  ">
-            <h3 className='font-[600px] text-[32px]'>Payment</h3>
-            <div>
-              <p>Billing country/Region</p>
-              <p>Nigeria</p>
-              <span>Edit</span>
-              {/* checkbox */}
+            <h3 className='font-[600px] text-[32px] py-4'>Payment</h3>
+            <div className=''>
+              <div className='flex gap-2 font-[500px] text-base w-[50%] '>
+                <p>Billing country/Region </p>
+                <img src={help} alt=""  className='w-5 h-5'/>
+              </div>
+              <div className='flex gap-2'>
+                <p>Nigeria</p>
+                <span className='underline'>Edit</span>
+              </div>
+              <div className="flex gap-2">
+              <div className="form-control gap-2">
+                <label className="label cursor-pointer">
+                  <input type="checkbox"  className="checkbox" />
+                </label>
+              </div>
               <p>Do you have a gift card, product voucher or promo code?</p>
+              <img src={help} alt=""  className='w-5 h-5'/>
             </div>
-            <div className="">
-              <p>Select payment method</p>
+            </div>
+            <div className="my-2">
+              <p className='font-medium text-sm'>Select payment method</p>
               {/* radio */}
-              <p>Credit or Debit Card</p>
-              <p>paypal</p>
-              <p>Gpay</p>
-            </div>
-            <div>
-              <h5>Add Card</h5>
-              <div>
-                <div>
-                  <p>Card Number</p>
-                  {/* input */}
+              <div className='my-4'>
+                <div className='flex gap-2 text-sm '>
+                  <input type="radio" name="radio-6" className="radio radio-black" defaultChecked />
+                  <img src={creditCard} alt="" className='w-4 h-5 pt-1' />
+                  <p>Credit or Debit Card</p>
                 </div>
-                <div>
-                  <p>Expiration Date</p>
-                  {/* input */}
+                <div className='flex my-2'>
+                  <input type="radio" name="radio-6" className="radio radio-black" />
+                  <img src={pp} alt="" className='w-16  gap-2 my-2' />
                 </div>
-                <div>
-                  <p>CVV</p>
-                  {/* input */}
+                <div className='flex my-2 gap-2'>
+                  <input type="radio" name="radio-6" className="radio radio-black" />
+                  <img src={gpay} alt="" className='w-12 ' />
                 </div>
               </div>
             </div>
+            <div>
+              <h5 className='font-medium text-md'>Add Card</h5>
+              <div>
+                <div>
+                  <div>
+                    <p>Card Number
+                <label className=" input input-bordered rounded-3xl items-center text-[#696969] ">
+                  
+                    <input type="text"
+                      className=" "
+                      placeholder="0000-0000-0000-0000"/> 
+                </label></p>
+                    
+                    <p>Expiration Date
+                <label className=" input input-bordered rounded-3xl items-center text-[#696969] ">
+                  
+                    <input type="text"
+                      className=" "
+                      placeholder="MM/YY"/> 
+                </label></p>
+                <p>CVV
+                <label className=" input input-bordered rounded-3xl items-center text-[#696969] ">
+                  
+                    <input type="text"
+                      className=" "
+                      placeholder="XXX"/> 
+                </label></p>
+                  </div>       
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-2">
+              <div className="form-control gap-2">
+                <label className="label cursor-pointer">
+                  <input type="checkbox"  className="checkbox" />
+                </label>
+              </div>
+                <p>Save card for later</p>
+                <img src={help} alt=""  className='w-5 h-5'/>
+            </div>
+            <div className="flex gap-2 my-8">
+            <div className="form-control gap-2">
+              <label className="label cursor-pointer">
+                <input type="checkbox" defaultChecked className="checkbox" />
+                <p className="text-base">Billing address same as shipping.</p>
+              </label>
+            </div>
+            </div>
             {/* order review */}
-            <div className=' '>
+            <div className=' my-4'>
               <h3 className='font-[600px] text-[32px]'>Order Review</h3>
-                <p className=''>
+                <p className=' mt-3'>
                   By clicking The “place order” button, you confirm that you 
                   have read, understand, and accept our  
                     <Link to='/checkout' className='link link-hover font-medium'> Terms of Use</Link>

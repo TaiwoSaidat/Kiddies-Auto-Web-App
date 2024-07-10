@@ -29,7 +29,7 @@ const Cart = () => {
               </div>
               <div>
                 <div className='flex justify-between '>
-                  <p className='font-[500px] text-[24px]'>Mercedes Benz Cls</p> 
+                  <p className='font-[500px] text-[24px] py-4 pr-4'>Mercedes Benz Cls</p> 
                   <h3 className='font-[600px] text-[32px]' >$270.00</h3> 
                 </div>
                 <div className=''>
