@@ -13,35 +13,48 @@ const Header = () => {
       {/* bg-[#fcfcfc] */}
       {/* <nav className=' w-full h-28 flex items-center justify-between py-8 bg-[#fcfcfc] ' >
         <div className="w-[90%] h-12 flex justify-between items-center mx-auto flex-none order-none self-stretch grow-0 p-0;"> */}
-      <div className="w-full  bg-[#fcfcfc]  ">
+      <div className=" bg-[#fcfcfc]  ">
         <div className=" flex items-center justify-between  mx-5">
           <div className="">
-            <img src={applogo} alt="" />
+            <Link to="/">
+              <img src={applogo} alt="" />
+            </Link>
           </div>
           <div className="hidden lg:flex  gap-10 ">
-            <div className="flex ">
-              <p>Categories</p>
-              <img src={arrowDown} alt="" />
+            <div className="flex  ">
+              {/* <label htmlFor="categories"></label> */}
+              <select name="categories" id="categories">
+                <option value="">Categories</option>
+                <option value="convertible">Convertible</option>
+                <option value="jeep">Jeep</option>
+                <option value="motorbike">Motorbike</option>
+                <option value="bicycle">Bicycle</option>
+              </select>
             </div>
-            <p>Deals</p>
-            <p>Whats New</p>
-            <p>Delivery</p>
+            <div className="lg:flex  gap-10 ">
+              <img className="lg:hidden" src={menu} alt="" />
+              <div className="hidden lg:flex gap-10">
+                <p>Deals</p>
+                <p>What's New</p>
+                <p>Delivery</p>
+              </div>
+            </div>
           </div>
 
           <div className=" flex flex-row items-center gap-10 ">
-            <form action="">
+            <form action="#">
               <label className="hidden input input-bordered rounded-3xl lg:flex items-center gap-2 bg-[f6f7f8] ">
-                <input type="text" className=" " placeholder="Search" />
-                <img className="" src={search} alt="" />
+                <input type="text" className="" placeholder="Search" />
+                <img className="" src={search} alt="search" />
               </label>
             </form>
-            <div className="flex justify-between gap-5">
+            <div className=" flex gap-28 lg:flex lg:gap-5">
               <Link to="/" className="flex gap-1">
-                <img src={account} alt="" />
+                <img src={account} alt="account icon" className="w-4 h-5" />
                 <p className=" hidden lg:flex ">Account</p>
               </Link>
               <Link to="/cart" className=" flex gap-1 ">
-                <img src={cart} alt="" />
+                <img src={cart} alt="cart icon" className="w-4 h-5" />
                 <p className=" hidden lg:flex ">Cart</p>
               </Link>
             </div>
