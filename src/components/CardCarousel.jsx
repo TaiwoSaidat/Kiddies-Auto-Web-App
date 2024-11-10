@@ -48,7 +48,7 @@ const CardCarousel = () => {
         {currentItems.map((card, i) => (
           <div
             key={i}
-            className="w-full rounded-xl border bg-green-800 p-4 flex flex-col justify-between"
+            className="w-full rounded-xl border  p-4 flex flex-col justify-between"
           >
             <img src={card.image} alt="" className="w-full" />
             <div className="flex items-center mt-2">
