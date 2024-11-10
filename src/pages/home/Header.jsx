@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import applogo from "../../assets/applogo.png";
 import arrowDown from "../../assets/arrowdownblack.png";
 import search from "../../assets/searchblack.png";
@@ -8,11 +9,17 @@ import menu from "../../assets/menu.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+  // Close the menu
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <>
-      {/* bg-[#fcfcfc] */}
-      {/* <nav className=' w-full h-28 flex items-center justify-between py-8 bg-[#fcfcfc] ' >
-        <div className="w-[90%] h-12 flex justify-between items-center mx-auto flex-none order-none self-stretch grow-0 p-0;"> */}
       <div className=" bg-[#fcfcfc]  ">
         <div className=" flex items-center justify-between  mx-5">
           <div className="">
@@ -20,24 +27,54 @@ const Header = () => {
               <img src={applogo} alt="" />
             </Link>
           </div>
-          <div className="hidden lg:flex  gap-10 ">
-            <div className="flex  ">
-              {/* <label htmlFor="categories"></label> */}
-              <select name="categories" id="categories">
-                <option value="">Categories</option>
-                <option value="convertible">Convertible</option>
-                <option value="jeep">Jeep</option>
-                <option value="motorbike">Motorbike</option>
-                <option value="bicycle">Bicycle</option>
-              </select>
-            </div>
-            <div className="lg:flex  gap-10 ">
-              <img className="lg:hidden" src={menu} alt="" />
-              <div className="hidden lg:flex gap-10">
-                <p>Deals</p>
-                <p>What's New</p>
-                <p>Delivery</p>
+          
+          <div>
+            <div className="hidden lg:flex gap-10">
+              <div className="flex">
+                {/* Select Dropdown for Categories */}
+                <select name="categories" id="categories">
+                  <option value="">Categories</option>
+                  <option value="convertible">Convertible</option>
+                  <option value="jeep">Jeep</option>
+                  <option value="motorbike">Motorbike</option>
+                  <option value="bicycle">Bicycle</option>
+                </select>
               </div>
+              <div className="lg:flex gap-10">
+                <div className="hidden lg:flex gap-10">
+                  <p>Deals</p>
+                  <p>What's New</p>
+                  <p>Delivery</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Hamburger Menu for Small Screens */}
+            <div className="lg:hidden flex items-center">
+              <button onClick={toggleMenu} className="p-2">
+                <img src={menu} alt="Menu" />
+              </button>
+              {isMenuOpen && (
+                <div className="absolute top-0 left-0 w-full bg-white shadow-lg p-5">
+                  <div className="flex justify-between items-center">
+                    {/* Close Button */}
+                    <button onClick={closeMenu} className="text-2xl">
+                      X
+                    </button>
+                  </div>
+                  <ul className="flex flex-col gap-4 mt-4">
+                    <li>
+                      <p>Deals</p>
+                    </li>
+                    <li>
+                      <p>What's New</p>
+                    </li>
+                    <li>
+                      <p>Delivery</p>
+                    </li>
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
 

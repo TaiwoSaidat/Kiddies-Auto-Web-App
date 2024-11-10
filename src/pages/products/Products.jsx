@@ -15,32 +15,7 @@ import CardCarousel from '../../components/CardCarousel.jsx'
 import TopDeals from "../../components/TopDeals.jsx";
 
 const Products = () => {
-  const itemsPerPage = 4;
-  const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Calculate the subset of items to display based on currentIndex
-  const currentItems = flashSales.slice(
-    currentIndex,
-    currentIndex + itemsPerPage
-  );
-
-   const handleNext = () => {
-     // Move to the next set, or wrap around if at the end
-     if (currentIndex + itemsPerPage < flashSales.length) {
-       setCurrentIndex(currentIndex + itemsPerPage);
-     } else {
-       setCurrentIndex(0); // Reset to start when end is reached
-     }
-   };
-
-   const handlePrevious = () => {
-     // Move to the previous set, or wrap around if at the beginning
-     if (currentIndex - itemsPerPage >= 0) {
-       setCurrentIndex(currentIndex - itemsPerPage);
-     } else {
-       setCurrentIndex(flashSales.length - itemsPerPage); // Show last set if going backwards from start
-     }
-   };
   return (
     <>
       <div className=" w-full flex items-center justify-between py-8 bg-[#fcfcfc] mx-auto ">
@@ -56,14 +31,7 @@ const Products = () => {
                 <Timer />
               </div>
             </div>
-            {/* <div className="flex gap-2 items-center h-full ">
-              <button onClick={handlePrevious}>
-                <img src={east} alt="" />
-              </button>
-              <button onClick={handleNext}>
-                <img src={west} alt="" />
-              </button>
-            </div> */}
+           
           </div>
           <CardCarousel />
         </div>

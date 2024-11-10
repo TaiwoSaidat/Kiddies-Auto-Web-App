@@ -15,6 +15,7 @@ import image2 from '../../assets/image2.png'
 import image3 from '../../assets/image3.png'
 import image4 from '../../assets/image4.png'
 import search from '../../assets/searchblack.png'
+import CardCarousel from '../../components/CardCarousel'
 
 const Cart = () => {
   return (
@@ -133,7 +134,7 @@ const Cart = () => {
         {/* Recommendations */}
         <div className=" w-full flex items-center justify-between py-8 bg-[#fcfcfc] mx-auto ">
           <div className="w-[90%] flex flex-col mx-auto flex-none order-none  grow-0 p-0 gap-6">
-            <div className=" flex justify-between  ">
+            <div className=" flex flex-col  ">
               <div className=" lg:flex flex-row items-center ">
                 {/* recommndation */}
                 <div className="  flex gap-10">
@@ -143,7 +144,11 @@ const Cart = () => {
                 </div>
               </div>
               {/* arrows */}
-              <div className="">
+              <div>
+              <CardCarousel />  
+              </div>
+              
+              {/* <div className="">
                 <ul className="flex gap-2 items-center h-full   ">
                   <li>
                     <a href="">
@@ -156,15 +161,15 @@ const Cart = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
 
             {/* cards */}
-            <div className="md:flex justify-between gap-3 grid grid-cols-1 lg:gap-3 w-full items-center ">
+            {/* <div className="md:flex justify-between gap-3 grid grid-cols-1 lg:gap-3 w-full items-center ">
               {arr.map((card, i) => {
                 return <Card key={i} {...card} />;
               })}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

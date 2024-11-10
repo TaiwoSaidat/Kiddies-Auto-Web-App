@@ -6,7 +6,7 @@ import rating from '../assets/rating.png'
 const Card = ({image, text, priceblack, pricered, rate, price}) => {
   return (
     <>
-      <div className=" w-full rounded-xl border border-1 bg-green-800 p-4 flex flex-col justify-between ">
+      <div className=" w-full rounded-xl border border-1  p-4 flex flex-col justify-between ">
         <img src={image} alt="" className=" w-full " />
         <div className="flex items-center mt-2">
           <p className=" w-[70%] font-semibold text-lg lg:text-2xl my-2 flex-wrap">
