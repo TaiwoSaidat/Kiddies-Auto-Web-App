@@ -20,7 +20,7 @@ const TopDeals = () => {
   };
 
   return (
-    <div className="w-full">
+    <div id="deals" className="w-full" >
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         {currentItems.map((card, i) => (
           <div

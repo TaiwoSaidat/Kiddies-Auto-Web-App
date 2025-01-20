@@ -1,20 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ButtonFilter from "../../components/ButtonFilter";
-import Card from "../../components/Card";
-import east from "../../assets/easts.png";
-import west from "../../assets/west.png";
 import topImage from "../../assets/5 1.png";
 import fav from "../../assets/favorite.png";
 import help from "../../assets/help.png";
 import plus from "../../assets/plus.png";
 import dash from "../../assets/dash.png";
 import basket from "../../assets/basket.png";
-import image1 from "../../assets/image1.png";
-import image2 from "../../assets/image2.png";
-import image3 from "../../assets/image3.png";
-import image4 from "../../assets/image4.png";
-import search from "../../assets/searchblack.png";
 import CardCarousel from "../../components/CardCarousel";
 
 const Cart = () => {
