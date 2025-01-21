@@ -5,9 +5,36 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    /* margin-left: 6px; */
+    /* margin-right: 6px; */
     padding: 0;
+    /* background-color: red; */
+    /* overflow: hidden; */
+
+    /* outline: 1px solid yellow; Debug element sizes */
+
 }
 
-.header, .hero{
-    overflow: hidden;
+html, body {
+    /* max-width: 100%; */
+    overflow-x: hidden; /* Prevent x-axis scrolling */
+        width: 100%; /* Ensure content scales to viewport width */
+
+    /* scroll-behavior: smooth;    */
 }
+
+.content {
+    position: relative; /* Avoid absolute/relative positions extending out */
+    margin: 0; /* No unnecessary negative margins */
+}
+
+
+/* html, body {
+    overflow-x: hidden; 
+} */
+
+
+
+/* .header, .hero{
+    
+} */

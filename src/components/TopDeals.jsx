@@ -52,7 +52,7 @@ const TopDeals = () => {
       <div className="flex justify-center mt-4">
         <button
           onClick={loadMore}
-          className="md:w-[143px] border border-[#840032] rounded-[100px] text-base font-[600px] leading-[1.6]  text-[#696969] bg-[#F6F6F6] text-center py-2.5"
+          className="md:w-[143px] border border-gray-300 rounded-[100px] text-base font-[600px] leading-[1.6]  text-[#696969] bg-[#F6F6F6] text-center py-2.5"
           disabled={currentIndex >= topDeals.length} // Disable button if all items are displayed
         >
           {currentIndex >= topDeals.length ? "No More Items" : "Load More"}

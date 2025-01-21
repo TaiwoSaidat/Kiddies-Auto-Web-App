@@ -35,7 +35,9 @@ const CardCarousel = () => {
   };
 
   return (
-    <div className="w-full">
+    // px-4 lg:px-12 3xl:px-0
+    <div className=" ">
+      {/* arrow */}
       <div className="flex justify-between mb-4">
         <button onClick={handlePrevious}>
           <img src={east} alt="" />
@@ -44,18 +46,21 @@ const CardCarousel = () => {
           <img src={west} alt="" />
         </button>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+      {/* cards */}
+      <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8 ">
         {currentItems.map((card, i) => (
           <div
             key={i}
-            className="w-full rounded-xl border  p-4 flex flex-col justify-between"
+            className="border rounded-xl flex flex-col justify-between"
           >
-            <img src={card.image} alt="" className="w-full" />
-            <div className="flex items-center mt-2">
-              <p className="w-[70%] font-semibold text-lg lg:text-2xl my-2 flex-wrap">
+            {/* className="w-full" */}
+            <img src={card.image} alt="" />
+            <div className="flex items-center justify-between mt-2">
+              {/* w-[70%] */}
+              <p className=" font-semibold text-lg lg:text-2xl my-2 flex-wrap">
                 {card.text}
               </p>
-              <img src={rCart} className="w-14 h-14 ml-20" alt="" />
+              <img src={rCart} alt="" />
             </div>
             <div className="flex justify-between items-center my-2">
               <h4 className="font-[600px] text-[26px] ">{card.priceblack}</h4>

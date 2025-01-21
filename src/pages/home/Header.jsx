@@ -40,8 +40,8 @@ const Header = () => {
           </div> */}
   return (
     <>
-      <div className=" bg-[#fcfcfc] py-2  ">
-        <div className=" flex items-center justify-between  mx-5">
+      <div className="w-full px-4 lg:px-12 3xl:px-0 py-3 bg-[#fcfcfc]   ">
+        <div className=" flex items-center justify-between  ">
           <div className="">
             <Link to="/">
               <img src={applogo} alt="" />
@@ -60,12 +60,12 @@ const Header = () => {
                   <option value="bicycle">Bicycle</option>
                 </select>
               </div>
-              <div className="lg:flex gap-10">
-                <div className="hidden lg:flex gap-10">
+              <div className="hidden lg:flex gap-10">
+                {/* <div className="lg:flex gap-10"> */}
                   <p>Deals</p>
                   <p>What's New</p>
                   <p>Delivery</p>
-                </div>
+                {/* </div> */}
               </div>
             </div>
 
@@ -88,9 +88,7 @@ const Header = () => {
                       <Link to="/" className="flex gap-1">
                         <p className=" lg:flex ">Deals</p>
                       </Link>
-                      <NavLink  >
-
-                      </NavLink>
+                      <NavLink></NavLink>
                     </li>
                     <li>
                       <p>What's New</p>
