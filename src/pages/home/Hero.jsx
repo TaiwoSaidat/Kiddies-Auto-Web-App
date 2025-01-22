@@ -1,8 +1,6 @@
 import React from 'react'
 import car1 from '../../assets/5 1.png'
 import Button from '../../components/button/Button'
-// import ButtonFilter from '../../components/ButtonFilter'
-
 
 const Hero = ({}) => {
   return (

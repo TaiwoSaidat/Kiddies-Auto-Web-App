@@ -35,7 +35,6 @@ const CardCarousel = () => {
   };
 
   return (
-    // px-4 lg:px-12 3xl:px-0
     <div className=" ">
       {/* arrow */}
       <div className="flex justify-between mb-4">
@@ -47,16 +46,14 @@ const CardCarousel = () => {
         </button>
       </div>
       {/* cards */}
-      <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8 ">
+      <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 ">
         {currentItems.map((card, i) => (
           <div
             key={i}
             className="border rounded-xl flex flex-col justify-between"
           >
-            {/* className="w-full" */}
             <img src={card.image} alt="" />
             <div className="flex items-center justify-between mt-2">
-              {/* w-[70%] */}
               <p className=" font-semibold text-lg lg:text-2xl my-2 flex-wrap">
                 {card.text}
               </p>
@@ -68,9 +65,9 @@ const CardCarousel = () => {
                 {card.pricered}
               </p>
             </div>
-            <div className="flex items-center justify-between font-semibold mt-auto">
-              <img src={rating} alt="" />
-              <div className="flex mb-2 text-lg">{card.rate}</div>
+            <div className="flex items-center justify-between font-semibold gap-1 lg:gap-4 ">
+              <img src={rating} alt="" width={108} />
+              <div className="flex mb-2 text-lg  ">{card.rate}</div>
             </div>
           </div>
         ))}

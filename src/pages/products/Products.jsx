@@ -35,7 +35,7 @@ const Products = () => {
   //  };
   return (
     <>
-      <div className=" w-full px-4 lg:px-12 3xl:px-0 py-3  bg-[#fcfcfc] space-y-4">
+      <div className=" w-full px-4 lg:px-12 3xl:px-0 py-3  bg-[#fcfcfc] space-y-24">
         <div className=" space-y-6">
             <div className=" lg:flex flex-row items-center ">
               {/* flash sales */}
@@ -43,9 +43,9 @@ const Products = () => {
                 <img src={bolt} alt="" width={70} />
                 <h3 className=" font-semibold text-2xl my-6 ">Flash Sales</h3>
               </div>
-              <div className="flex gap-4">
+              {/* <div className="flex gap-4"> */}
                 <Timer />
-              </div>
+              {/* </div> */}
             </div>
           <CardCarousel />
         </div>
@@ -53,7 +53,7 @@ const Products = () => {
         {/* Top Deals */}
         <div className=" space-y-6">
             <div className="grid grid-cols-2 justify-between items-center ">
-              <h3 className="  flex justify-start font-semibold text-2xl ">
+              <h3 className="  flex justify-start font-semibold text-2xl md:text-5xl lg:text-5xl ">
                 Today's best deal for you
               </h3>
               <div className=" flex flex-wrap justify-end bg-[#fcfcfc] gap-4 ">

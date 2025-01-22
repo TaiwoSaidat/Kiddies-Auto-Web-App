@@ -20,19 +20,19 @@ const TopDeals = () => {
   };
 
   return (
-    <div id="deals" className="w-full" >
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+    <div id="deals" className="w-full">
+      <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4">
         {currentItems.map((card, i) => (
           <div
             key={i}
-            className="w-full rounded-xl border p-4 flex flex-col justify-between"
+            className="w-full rounded-xl border flex flex-col justify-between"
           >
             <img src={card.image} alt="" className="w-full" />
-            <div className="flex items-center mt-2">
-              <p className="w-[70%] font-semibold text-lg lg:text-2xl my-2 flex-wrap">
+            <div className="flex items-center justify-between mt-2">
+              <p className=" font-semibold text-lg lg:text-2xl my-2 flex-wrap">
                 {card.text}
               </p>
-              <img src={rCart} className="w-14 h-14 ml-20" alt="" />
+              <img src={rCart} alt="" />
             </div>
             <div className="flex justify-between items-center my-2">
               <h4 className="font-[600px] text-[26px] ">{card.priceblack}</h4>
@@ -40,9 +40,9 @@ const TopDeals = () => {
                 {card.pricered}
               </p>
             </div>
-            <div className="flex items-center justify-between font-semibold mt-auto">
-              <img src={rating} alt="" />
-              <div className="flex mb-2 text-lg">{card.rate}</div>
+            <div className="flex items-center justify-between font-semibold gap-1 lg:gap-4 ">
+              <img src={rating} alt="" width={108}  />
+              <div className="flex mb-2 text-lg ">{card.rate}</div>
             </div>
           </div>
         ))}
@@ -52,12 +52,11 @@ const TopDeals = () => {
       <div className="flex justify-center mt-4">
         <button
           onClick={loadMore}
-          className="md:w-[143px] border border-gray-300 rounded-[100px] text-base font-[600px] leading-[1.6]  text-[#696969] bg-[#F6F6F6] text-center py-2.5"
+          className=" border border-gray-800 rounded-[100px] text-base font-[600px]  text-[#696969] bg-[#F6F6F6] text-center py-2.5 px-6"
           disabled={currentIndex >= topDeals.length} // Disable button if all items are displayed
         >
           {currentIndex >= topDeals.length ? "No More Items" : "Load More"}
         </button>
-        
       </div>
     </div>
   );

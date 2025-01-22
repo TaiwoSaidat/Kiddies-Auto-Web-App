@@ -365,8 +365,6 @@ const Checkout = () => {
           </div>
         </div>
       </div>
-
-      {/* FIRST!!!!!!!!!!!!! */}
     </>
   );
 };

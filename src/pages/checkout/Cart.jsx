@@ -15,11 +15,7 @@ const Cart = () => {
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 p-2 gap-2">
           {/* 1st card!!!!!! */}
           <div className=" bg-[#FAFAFA] border rounded-xl p-4 space-y-2  ">
-            {/* <div className="">
-              <img src={fav} alt="" />
-            </div> */}
             <div className=" grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
-              {/* border rounded-xl border-gray-300 */}
               <div className="flex flex-row items-start justify-end   bg-[#FAFAFA] p-2">
                 <img src={topImage} alt="" className="w-full h-full" />
                 <img src={fav} alt="" width={32} height={32} />
@@ -136,7 +132,7 @@ const Cart = () => {
           <div className="w-[90%] flex flex-col mx-auto flex-none order-none  grow-0 p-0 gap-6">
             <div className=" flex flex-col  ">
               <div className=" lg:flex flex-row items-center ">
-                {/* recommndation */}
+                {/* recommondation */}
                 <div className="  flex gap-10">
                   <h3 className=" font-semibold text-2xl my-6 ">
                     Recommendations for you

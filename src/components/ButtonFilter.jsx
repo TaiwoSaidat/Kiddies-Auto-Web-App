@@ -4,7 +4,7 @@ const ButtonFilter = ({ text }) => {
   return (
     <>
       <div className=" border rounded-[100px] bg-[#F6F6F6] flex items-center px-6 ">
-        <p className="">{text}</p>
+        <p className=" text-xl">{text}</p>
       </div>
     </>
   );

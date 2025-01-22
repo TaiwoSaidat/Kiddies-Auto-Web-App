@@ -1,4 +1,3 @@
-import image from '../assets/arrow.png'
 
 const deals = [
   {
