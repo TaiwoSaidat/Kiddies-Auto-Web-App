@@ -9,7 +9,7 @@ import pp from "../../assets/pp.png";
 const Checkout = () => {
   return (
     <>
-      <div className=" px-14 space-y-4">
+      <div className=" px-4 space-y-4">
         {/*checkout and summary */}
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 py-4">
           {/* checkout div */}
@@ -20,14 +20,14 @@ const Checkout = () => {
               <button className="w-full border border-[#840032] rounded-[100px] text-xs font-[400px] leading-[1.6] text-[#f8f8f8] bg-[#840032] text-center py-2">
                 <Link to="/checkout">
                   {/* <div> */}
-                    <p className="">Delivery</p>
+                  <p className="">Delivery</p>
                   {/* </div> */}
                 </Link>
               </button>
               <button className="w-full border border-[#840032] rounded-[100px] text-xs font-[400px] leading-[1.6] text-[#840032] bg-[#f8f8f8] text-center py-2">
                 <Link to="/checkout">
                   {/* <div className="w-full border border-[#840032] rounded-[100px] text-xs font-[400px] leading-[1.6] text-[#840032] bg-[#f8f8f8] text-center py-2"> */}
-                    <p className="">Payment on Delivery</p>
+                  <p className="">Payment on Delivery</p>
                   {/* </div> */}
                 </Link>
               </button>
@@ -189,7 +189,7 @@ const Checkout = () => {
               </form>
             </div>
             <div className="grid grid-cols-2">
-                <p>Total</p>
+              <p>Total</p>
               <h3 className=" text-2xl flex justify-end">$315.00</h3>
             </div>
             <div className="flex flex-col justify-center items-center space-y-2">
@@ -274,7 +274,7 @@ const Checkout = () => {
                         type="number"
                         name=""
                         id=""
-                        className=" border-2 border-neutral-400 rounded-xl px-2 "
+                        className="w-full border-2 border-neutral-400 rounded-xl px-2 "
                         placeholder=" 0000-0000-0000-0000"
                       />
                     </div>
@@ -286,7 +286,7 @@ const Checkout = () => {
                         type="number"
                         name=""
                         id=""
-                        className=" border-2 border-neutral-400 rounded-xl px-2 "
+                        className=" w-full border-2 border-neutral-400 rounded-xl px-2 "
                         placeholder=" MM / YY"
                       />
                     </div>
@@ -298,7 +298,7 @@ const Checkout = () => {
                         type="number"
                         name=""
                         id=""
-                        className=" border-2 border-neutral-400 rounded-xl px-2 "
+                        className="w-full border-2 border-neutral-400 rounded-xl px-2 "
                         placeholder=" XXX"
                       />
                     </div>

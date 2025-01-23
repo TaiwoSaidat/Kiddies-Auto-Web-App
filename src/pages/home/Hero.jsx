@@ -5,8 +5,8 @@ import Button from '../../components/button/Button'
 const Hero = ({}) => {
   return (
     <>
-      <div className=" w-full px-4 lg:px-12 3xl:px-0 py-3 bg-[#fcfcfc]  ">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center border-2 gap-6">
+      <div className=" w-full px-4 lg:px-12 3xl:px-0 py-6 bg-[#fcfcfc]  ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center gap-6">
           <div className=" ">
             <h1 className="font-bold text-4xl md:text-7xl lg:text-9xl mb-6">
               Luxury Rides for Little Drivers

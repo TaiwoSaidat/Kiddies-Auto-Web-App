@@ -5,7 +5,7 @@ import SortButton from '../../components/button/SortButton'
 const Filter = () => {
   return (
     <>
-      <div className="w-full px-4 lg:px-12 3xl:px-0 py-3  bg-[#fcfcfc] ">
+      <div className="w-full px-4 lg:px-12 3xl:px-0 py-6  bg-[#fcfcfc] ">
           <div className="grid grid-cols-2 justify-between">
             <div className="flex flex-wrap  justify-start gap-3 ">
               {arr.map((button, i) => {

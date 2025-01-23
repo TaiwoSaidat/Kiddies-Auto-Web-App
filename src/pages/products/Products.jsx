@@ -35,7 +35,7 @@ const Products = () => {
   //  };
   return (
     <>
-      <div className=" w-full px-4 lg:px-12 3xl:px-0 py-3  bg-[#fcfcfc] space-y-24">
+      <div className=" w-full px-4 lg:px-12 3xl:px-0 py-6 bg-[#fcfcfc] space-y-24">
         <div className=" space-y-6">
             <div className=" lg:flex flex-row items-center ">
               {/* flash sales */}

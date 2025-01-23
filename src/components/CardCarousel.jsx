@@ -50,7 +50,7 @@ const CardCarousel = () => {
         {currentItems.map((card, i) => (
           <div
             key={i}
-            className="border rounded-xl flex flex-col justify-between"
+            className="border rounded-3xl p-2 flex flex-col justify-between "
           >
             <img src={card.image} alt="" />
             <div className="flex items-center justify-between mt-2">
@@ -67,7 +67,7 @@ const CardCarousel = () => {
             </div>
             <div className="flex items-center justify-between font-semibold gap-1 lg:gap-4 ">
               <img src={rating} alt="" width={108} />
-              <div className="flex mb-2 text-lg  ">{card.rate}</div>
+              <div className="flex mb-2 text-sm  ">{card.rate}</div>
             </div>
           </div>
         ))}
